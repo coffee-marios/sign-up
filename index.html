@@ -9,15 +9,79 @@
 </head>
 <body>
     
-</body>
-</html>
 <div id="page">
     <div id="left-bar">
         <img src="bernd-dittrich-RZP-GQxkb2w-unsplash.jpg" alt="sidebar_image">
     </div>
     
-    <div>
-<h1>TITLE</h1>
+    <div id="rightSide">
+       
+       <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up to get started.</h1>
+       
+
+        <form id="myform" action="" method="post">
+        
+            <fieldset>
+                
+             <legend>You know <span>what</span> to do!</legend>
+
+                <h1>Let's do this!</h1>
+               
+                <div class="justFlex">
+
+                    
+
+                    <div id="left-side-form">
+                        <div class="formInfo">
+                            <label for="fname">FIRST NAME</label> <br>
+                            <input type="text" placeholder="Thor" id="fname" name="fname"><br>
+                        </div>
+
+                        <div class="formInfo">
+                            <label for="email">EMAIL</label> <br>
+                            <input type="email" id="email" name="email">
+                        </div>
+                
+                        <div class="formInfo">
+                             <label for="pass">PASSWORD</label><br>
+                             <input type="password" id="pass" name="password"
+               minlength="8" required>
+               <p class="warning">* Passwords do not match!</p> 
+                        </div>
+                    </div>
+                    <div id="right-side-form">
+                        <div class="formInfo">
+                            <label for="lname">LAST NAME</label> <br>
+                            <input type="text" placeholder="Odison" id="lname" name="lname">
+                        </div>
+                        <div class="formInfo">
+                             <label for="phone">PHONE NUMBER</label> <br>
+                             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </div>
+                        <div class="formInfo">
+                            <label for="confirPas">CONFIRM PASSWORD</label><br>
+                            <input type="password"  id="confirm_password" required>
+                        </div>
+                    </div>
+                    
+                </div>
+            </fieldset>
+
+        <hr>
+        
+        <div>    
+
+        <input id="button" type="submit" value="Create Account" />
+        </div>
+
+        <br><br><br>
+        
+        <p class="message">Already have an account? <a href=""> Log in</a></p>
+        
+    </form>
 </div>
 
 </div>
+
+</body>
+</html>

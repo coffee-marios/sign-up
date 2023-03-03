@@ -1,98 +1,290 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 
-html, body {
-    height: 100%;
-  }
 
-body{
-    background-color: blueviolet;
+body {
+  background-color: blueviolet;
 }
 
 @font-face {
-    font-family: "logoFont";
-    src: url("myFonts/norse-bold-webfont.woff2") format("woff2"), url("fonts/journal-webfont.woff")
-        format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-
-
-
-  #page{
-    display: flex;
-    height: 100%;
-  }
-
-  h1 {
-    font-family: "logoFont", monospace;
-    font-size: 2rem;
+  font-family: "logoFont";
+  src: url("myFonts/barlow-regular-webfont.woff2") format("woff2"), url("myFonts/barlow-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-#left-bar{
-    background-color: aquamarine;
-    
-    max-width: 30%;
-    height: 100%;
-    overflow: clip;
-    
-  
-  
+body {
+  font-family: "logoFont", monospace;
+
 }
-  img{
-    max-width: 300px;
-    height: 100%;
-    
-    /* background-size: contain; */
-    /* object-fit: cover;     */
-    
-  }
-  
+
+
+html,
+body,
+#page {
+  min-height: 100%;
+}
+
+#left-bar {
+  min-height: 100%;
+}
+
+#page {
+  display: flex;
+  /*   
+    align-items: flex-start;
+    flex:1 1 80%; */
+
+  max-width: 100%;
+
+}
+
+.justFlex {
+  display: flex;
+
+}
+
+#rightSide {
+  padding: 11rem 4rem 0 4rem;
+  background-color: rgb(245, 242, 238);
+
+}
+
+#myform {
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.8;
+
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1.5rem 0 4rem 0;
+
+}
+
+span {
+  font-style: italic;
+}
+
+
+#left-bar {
+  background-color: aquamarine;
+  min-width: 30%;
+  overflow: clip;
+
+
+}
+
+img {
+  width: auto;
+  height: 100%;
+  display: block;
+
+}
+
+.justFlex {
+  padding-top: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  gap: 40px;
+
+}
+
+
+.formInfo {
+  padding: 15px;
+  font-weight: 500;
+}
+
+.formInfo input {
+  margin-top: 12px;
+}
+
+hr {
+  display: block;
+  margin-top: 3rem;
+  border-style: solid;
+  border-width: 1px;
+  border-width: 0.03rem;
+  margin-left: -3rem;
+  margin-right: -3rem;
+}
+
+#button {
+  background-color: green;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 10px 55px;
+  margin-top: 3rem;
+  border-radius: 6px;
+}
+
+.message {
+
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.warning {
+  font-size: 0.9rem;
+  color: red;
+  padding: 4px 4px 4px 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration:none;
+}
+
+a{
+  color: rgb(65, 150, 122);
+  font-weight: bolder;
+}
