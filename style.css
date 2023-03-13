@@ -187,7 +187,6 @@ body,
    background-color:aqua; 
   background-image: url(ben2.jpg);
   background-size: 100% 100%;
-  /* contain; */
   background-position: top;
   background-repeat: no-repeat;
   overflow: clip;
@@ -229,6 +228,28 @@ body,
   height: 100%; 
   display: block;
 }  */
+
+.add_credit{
+  display: block;
+  position: absolute;
+  text-align: center;
+  padding: 4px;
+  color:black;
+  background-color:rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 1rem;
+  bottom: 0;
+  left: 0;
+
+  /* padding:5px 10px; */
+}
+
+
+
+
+
+
+
 
 #rightSide {
   width: 65%; 
