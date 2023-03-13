@@ -215,19 +215,12 @@ body,
 
  
 #font-logo{
-  /* position: absolute; */
   font-family: "logoFont", monospace;
   font-size: 2rem;
   font-weight: bolder;
   color: rgba(255, 255, 255, 0.5);
   padding-right: 20px;
 } 
-
-/*  #left-picture {
-  width: 100%; 
-  height: 100%; 
-  display: block;
-}  */
 
 .add_credit{
   display: block;
@@ -240,8 +233,6 @@ body,
   height: 1rem;
   bottom: 0;
   left: 0;
-
-  /* padding:5px 10px; */
 }
 
 
@@ -261,7 +252,7 @@ body,
   clear: both;
   padding: 6rem 11rem 0 3rem;
   color: white;
-  /* background-color: var(--main-bg-color); */
+  
 }
 
 
@@ -320,8 +311,6 @@ hr {
   margin-top: 3rem;
   border-style: solid;
   width: 100%;
-  
-  /* border-width: 0.03rem; */
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -360,4 +349,9 @@ a:visited {
 a {
   color: rgb(65, 150, 122);
   font-weight: bolder;
+}
+
+input:focus {
+  border: blue solid 3px;
+  box-shadow: 5px 7px #939498c9;
 }
