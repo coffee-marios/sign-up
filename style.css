@@ -161,10 +161,6 @@ body,
 #page {
   float: left;
   background-color: var(--main-bg-color);
-  /* min-height: 100%; */
-  /* overflow: clip; */
-  
-  
 }
 
 #page>#left-bar {
@@ -188,12 +184,11 @@ body,
   left: 0;
   padding: 0;
   margin: 0;
-  
- /*  bottom: 0;
-  right: 0; */
-  /* background-color:aqua; */
+   background-color:aqua; 
   background-image: url(ben2.jpg);
-  background-size: contain;
+  background-size: 100% 100%;
+  /* contain; */
+  background-position: top;
   background-repeat: no-repeat;
   overflow: clip;
 }
@@ -296,6 +291,7 @@ span {
 
 .formInfo input {
   margin-top: 12px;
+  width: 90%;
 }
 
 hr {
@@ -314,9 +310,9 @@ hr {
   color: white;
   font-size: 1.2rem;
   font-weight: 800;
-  padding: 10px 55px;
-  margin-top: 3rem;
-  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 1.5rem;
+  border-radius: 8px;
 }
 
 .message {
